@@ -1,102 +1,114 @@
-# Live Project link : [SkillUP](https://skillup-66.netlify.app/)
+# SkillUP – Online Learning Platform
 
-## Backend Code : [SkillUP](https://github.com/Sakebul-islam/skillup-server-side.git)
+[![Live Website](https://img.shields.io/badge/Live-SkillUP-green?style=for-the-badge&logo=netlify)](https://skillup-66.netlify.app/)
+[![Backend Repository](https://img.shields.io/badge/Code-Backend-blue?style=for-the-badge&logo=github)](https://github.com/Sakebul-islam/skillup-server-side.git)
 
-2. **Admin email: bhavana6@gmail.com**
-3. **Admin password: 123!Az**
-4. **Teacher email: teacher@gmail.com**
-5. **Teacher password: teacher@gmail.com**
-6. **Student email: student1@nasmis.com**
-7. **Student password: student1@nasmis.com**
+> A full-featured MERN Stack-based e-learning platform with role-based dashboards for Admins, Teachers, and Students.
+
+---
+
+## Admin & Test Credentials
+
+| Role    | Email                     | Password         |
+|---------|---------------------------|------------------|
+| Admin   | bhavana6@gmail.com        | `123!Az`         |
+| Teacher | teacher@gmail.com         | `teacher@gmail.com` |
+| Student | student1@nasmis.com       | `student1@nasmis.com` |
+
+---
 
 ## Project Overview
 
-This project involves creating an interactive online learning platform using the MERN stack. The platform facilitates seamless communication between students and teachers, offering features such as responsive design, class management, user roles, and a dynamic homepage. Students can enroll in classes, access course details, submit assignments, and provide feedback. Teachers can add classes, manage enrollments, and evaluate student progress. The admin oversees teacher requests, user management, and class approvals, ensuring a comprehensive educational experience for all users.
+**SkillUP** is an interactive online learning platform built with the **MERN stack**. It enables smooth interaction between students and teachers, secure role-based access, responsive UI, real-time feedback, and class/assignment management.
 
-# SkillUp Website Features
+Key features include:
+- **Student features:** enroll in classes, access class details, submit assignments, provide feedback.
+- **Teacher features:** add/manage classes, track student progress.
+- **Admin features:** handle user/teacher management and class approvals.
 
-1. **Responsive Design:**
+---
 
-   - The website is designed to be responsive, ensuring a seamless experience across various devices, including desktops, tablets, and mobile phones.
+## Features
 
-2. **Navbar:**
+### 1. **Responsive Design**
+- Fully responsive for desktops, tablets, and mobiles.
 
-   - The navbar includes a logo, website name, Home, All Classes, Teach on SkillUP, and Sign In (when not logged in) button.
-   - When logged in, the user's profile picture appears on the navbar.
-   - Clicking on the profile picture displays a dropdown with options like User name, Dashboard, and Logout.
+### 2. **Navigation Bar**
+- Shows dynamic options based on login state.
+- Includes Home, All Classes, Teach on SkillUP, Login, and a user profile dropdown.
 
-3. **Homepage:**
+### 3. **Homepage**
+- Hero section with carousel/banner.
+- Partner/collaborator logos.
+- Highlighted and trending classes.
+- Real-time statistics: users, classes, enrollments.
+- Feedback carousel from students.
 
-   - Banner section with relevant images/carousel.
-   - Partners or collaborators section with logos and brief descriptions.
-   - Highlighted classes section based on popularity or recommendations.
-   - Feedback section in the student dashboard displayed through a carousel.
-   - Section showing total users, total classes, and total student enrollment.
+### 4. **All Classes Page**
+- Card-based layout with class details: title, teacher, image, price, description, enroll count, and an enroll button.
 
-4. **All Classes Page:**
+### 5. **Class Details & Payment**
+- Enroll redirects to a private Class Detail page.
+- Stripe payment integration for class enrollment.
 
-   - Displays classes in card format with information such as title, teacher name, image, price, short description, total enrollment, and enroll button.
+### 6. **Teach on SkillUP**
+- Private route for applying as a teacher.
+- Submit teaching application form for admin approval.
 
-5. **Class Details Page:**
+### 7. **Student Dashboard**
+- My Enrolled Classes with card layout and details.
+- Assignment submissions per class.
+- Personal profile view.
 
-   - Private route accessible after clicking the Enroll button.
-   - Shows detailed information about the class, including teacher, price, etc.
-   - Includes a Pay button redirecting to the payment page.
+### 8. **Teacher Dashboard**
+- Add and manage your own classes.
+- Update, delete, and view enrolled students.
+- View personal profile.
 
-6. **Teach on SkillUP Page:**
+### 9. **Admin Dashboard**
+- Approve/reject teacher requests.
+- Manage users and assign admin roles.
+- Approve/reject/view all classes.
 
-   - Private route allowing users to apply for a teaching position.
-   - Form includes fields like Name, Images, Experience, Title, and Category.
-   - Submit for review button saves data in the database and shows the request on the admin dashboard.
+### 10. **Authentication**
+- Login and registration with form validation.
+- Google Sign-in support.
+- Role-based redirection and access.
 
-7. **Student Dashboard:**
+---
 
-   - Private route with routes to My Enroll Class and Profile.
-   - My Enroll Class page displays enrolled classes in card format with details.
-   - My Enroll Class Details page shows assignments for each class and allows users to submit assignments.
+## Tech Stack
 
-8. **Admin Dashboard:**
+| Tech                 | Purpose                                              |
+|----------------------|------------------------------------------------------|
+| **React**            | Frontend framework                                   |
+| **Tailwind CSS**     | Styling with utility-first approach                  |
+| **Firebase**         | Authentication & hosting                             |
+| **Express.js**       | Backend API handling                                 |
+| **MongoDB**          | Database management                                  |
+| **Stripe**           | Payment gateway integration                          |
+| **Axios**            | API requests                                         |
+| **Swiper**           | Carousels and sliders                                |
+| **AOS**              | Scroll animations                                    |
+| **React Router DOM** | SPA routing                                          |
+| **React Hook Form**  | Form management and validation                       |
+| **React Icons**      | Icons integration                                    |
+| **React Toast**      | Toast notifications                                  |
+| **React Select**     | Advanced dropdowns                                   |
+| **React Spinners**   | Loading indicators                                   |
+| **React Helmet Async** | Dynamic document title & meta updates             |
+| **Date-fns**         | Date utilities and formatting                        |
 
-   - Private route with routes to Teacher Request, Users, All Classes, and Profile.
-   - Teacher Request page displays requests with options to approve or reject.
-   - Users page shows all users with options to make a user admin.
-   - All Classes page displays all classes with options to approve, reject, and see progress.
+---
 
-9. **My Profile:**
+## Screenshot
 
-   - Displays user information, including name, role, image, email, and phone.
+![SkillUP Screenshot](https://raw.githubusercontent.com/Sakebul-islam/SkillUP/main/src/assets/images/screencapture-skillup-66-netlify-app-2024-01-07-15_30_34.png)
 
-10. **Teacher Dashboard:**
+---
 
-    - Private route with routes to Add Class, My Class, and Profile.
-    - Add Class page allows teachers to create classes with various details.
-    - My Class page displays classes added by the teacher with options to update, delete, and see details.
+## Contribute or Contact
 
-11. **Authentication:**
-    - Login and Registration pages with relevant error messages.
-    - Google Sign-in option on the login page.
-    - Registration form includes fields like Name, Email, Password, and PhotoURL.
+Feel free to fork, raise issues, or contact for collaboration via GitHub.
 
-## Technologies used in the project
-
-- React [Used for building declarative, efficient, and component-based user interfaces in JavaScript]
-- Aos [Used for animation]
-- Axios [Used for making HTTP requests]
-- date-fns [Used for date manipulation and formatting]
-- Firebase [Used for authentication]
-- react-helmet-async [used for managing and updating document head tags asynchronously in React applications]
-- react-hook-form [used for managing forms in React applications with hooks and optimized performance]
-- react-hot-toast [used for displaying toast notifications in React applications]
-- react-icons [used for incorporating scalable and customizable icons into React applications]
-- react-rating-stars-component [used for adding customizable star ratings to React applications]
-- react-router-dom [used for handling routing and navigation in React applications]
-- react-select [used for creating powerful and customizable dropdown/select components in React applications]
-- react-spinners [used for incorporating customizable loading spinners in React applications]
-- Swiper [used for building touch-enabled sliders or carousels with smooth transitions and extensive customization options]
-- Tailwind CSS [a utility-first CSS framework that provides a set of utility classes for building and styling modern user interfaces]
-- Stripe [a payment processing platform that offers APIs and tools for businesses and developers to accept online payments]
-
-## Website Screenshot
-
-![SkillUP!](https://raw.githubusercontent.com/Sakebul-islam/SkillUP/main/src/assets/images/screencapture-skillup-66-netlify-app-2024-01-07-15_30_34.png)
-"# SkillUp" 
+---
